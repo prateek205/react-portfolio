@@ -1,0 +1,16 @@
+{
+  "enquiry": [
+    {
+      "name": "Prateek Bahad",
+      "email": "prateek@gmail.com",
+      "message": "Hello, Nice Website created",
+      "id": 1
+    },
+    {
+      "name": "rahul",
+      "email": "rahul@gmail.com",
+      "message": "hii",
+      "id": 2
+    }
+  ]
+}
