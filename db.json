@@ -12,5 +12,67 @@
       "message": "hii",
       "id": 2
     }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "category": "MERN Stack Project",
+      "title": "Beauty-Products",
+      "image": "/Projects/beauty-products.png",
+      "description": "A modern beauty products website featuring skincare, makeup, and cosmetic collections with responsive design and seamless user experience.",
+      "stacks": ["React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
+      "github": "https://github.com/prateek205/react-portfolio",
+      "live Demo": "react-portfolio-7i9i.onrender.com"
+    },
+    {
+      "id": 2,
+      "category": "Frontend Project",
+      "title": "Indian Tourism",
+      "image": "/Projects/indian-tourism.png",
+      "description": "A responsive tourism website showcasing popular Indian destinations, cultural heritage, travel guides, and tourist attractions",
+      "stacks": ["React", "Node.js", "Tailwind CSS","React-Router","JSON Server"],
+      "github": "https://github.com/prateek205/Indian_Tourism",
+      "live Demo": "https://indian-tourism-ny8l.onrender.com/"
+    },
+    {
+      "id": 3,
+      "category": "JavaScript Application",
+      "title": "Pomodoro-Timer",
+      "image": "/Projects/pomodoro-timer.png",
+      "description": "A productivity-focused timer application that helps users manage work and break sessions using the Pomodoro Technique with a clean and responsive interface.",
+      "stacks": ["React", "Node.js", "Tailwind CSS"],
+      "github": "https://github.com/prateek205/pomodoro-timer",
+      "live Demo": "https://pomodoro-timer-dw29.onrender.com/"
+    },
+    {
+      "id": 4,
+      "category": "JavaScript Application",
+      "title": "Pomodoro-App",
+      "image": "/Projects/pomodoro-app.png",
+      "description": "A productivity-focused timer application that helps users manage work and break sessions using the Pomodoro Technique with a clean and responsive interface.",
+      "stacks": ["React", "Node.js", "Tailwind CSS"],
+      "github": "https://github.com/prateek205/pomodoro-app",
+      "live Demo": "https://pomodoro-app-gib8.onrender.com/"
+    },
+    {
+      "id": 5,
+      "category": "JavaScript Application",
+      "title": "To-Do Task-App",
+      "image": "/Projects/todo-task.png",
+      "description": "A responsive task management application that helps users organize, track, and manage daily tasks with an intuitive and user-friendly interface.",
+      "stacks": ["React", "Node.js", "Tailwind CSS"],
+      "github": "https://github.com/prateek205/to-do-app",
+      "live Demo": "https://to-do-app-xfxo.onrender.com/"
+    },
+    {
+      "id": 6,
+      "category": "Frontend Project",
+      "title": "Blog-App",
+      "image": "/Projects/blog-app.png",
+      "description": "A modern blog application that allows users to explore, read, and manage blog posts through a clean and responsive interface.",
+      "stacks": ["React", "Node.js", "Tailwind CSS","React-Router","JSON Server"],
+      "github": "https://github.com/prateek205/blog-app",
+      "live Demo": "https://blog-app-016s.onrender.com/"
+    }
   ]
 }
