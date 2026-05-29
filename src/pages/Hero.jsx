@@ -46,6 +46,7 @@ const Hero = () => {
               Hire Me
             </button>
 
+            <Link to="/projects">
             <button
               className="
             px-8 py-3
@@ -60,6 +61,7 @@ const Hero = () => {
             >
               View Projects
             </button>
+            </Link>
           </div>
 
           {/* Social Links */}
