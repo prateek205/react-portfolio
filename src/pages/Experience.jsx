@@ -3,71 +3,124 @@ import Skills from "../components/Skills";
 
 const Experience = () => {
   return (
-    <section className="h-screen flex flex-col gap-5 bg-white dark:bg-gray-700 py-8 px-20">
-      <div className="flex gap-8 w-full">
-        <div className="flex flex-col gap-5 w-full rounded-md h-96 py-6 px-7 shadow-[0_0_10px_rgb(50,50,50)] dark:shadow-[0_0_10px_rgb(250,250,250)]">
-          <h1 className="text-4xl text-center">Experience</h1>
-          <h2 className="text-2xl">Frontend Developer</h2>
-          <p className="font-bold">Tech Surya | Present</p>
-          <ul className="flex flex-col gap-2">
-            <li className="flex gap-2">
-              <span>✅</span>
-              <p>
-                Working as an intern on real-world web development projects.
-              </p>
+    <section className="min-h-screen bg-white dark:bg-gray-900 py-12 px-6 md:px-12 lg:px-20 text-black dark:text-white">
+      {/* Section Title */}
+      <div className="text-center mb-12">
+        <h1 className="text-5xl font-bold">
+          Experience & <span className="text-red-600">Education</span>
+        </h1>
+        <p className="text-gray-500 dark:text-gray-400 mt-3">
+          My professional journey and academic background.
+        </p>
+      </div>
+
+      {/* Cards */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Experience */}
+        <div
+          className="
+        group
+        bg-white dark:bg-gray-800
+        rounded-2xl
+        border-t-4 border-red-600
+        shadow-lg
+        hover:-translate-y-2
+        duration-300
+        p-8"
+        >
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-4xl">💼</span>
+            <h2 className="text-3xl font-bold">Experience</h2>
+          </div>
+
+          <h3 className="text-2xl font-semibold text-red-600">
+            Frontend Developer Intern
+          </h3>
+
+          <p className="font-medium text-gray-500 dark:text-gray-400 mb-5">
+            Tech Surya • Present
+          </p>
+
+          <ul className="space-y-4">
+            <li className="flex gap-3">
+              <span>🚀</span>
+              <p>Working on real-world web development projects.</p>
             </li>
-            <li className="flex gap-2">
-              <span>✅</span>{" "}
-              <p>
-                Build a responsive web application and website using React.js
-              </p>
+
+            <li className="flex gap-3">
+              <span>⚛️</span>
+              <p>Building responsive applications using React.js.</p>
             </li>
-            <li className="flex gap-2">
-              <span>✅</span>{" "}
-              <p>Create the reusable react component and modern layouts.</p>
+
+            <li className="flex gap-3">
+              <span>🧩</span>
+              <p>Creating reusable React components and modern UI layouts.</p>
             </li>
-            <li className="flex gap-2">
-              <span>✅</span>
-              <p>
-                Learning the Industrial workflow, debugging and team
-                collaboration.
-              </p>
+
+            <li className="flex gap-3">
+              <span>🤝</span>
+              <p>Learning team collaboration, debugging, and workflows.</p>
             </li>
-            <li className="flex gap-2">
-              <span>✅</span> <p>Improving skills in MERN Stack development.</p>
+
+            <li className="flex gap-3">
+              <span>📚</span>
+              <p>Enhancing MERN Stack development skills.</p>
             </li>
           </ul>
         </div>
 
-        <div className="flex flex-col gap-5 w-full h-96 rounded-md py-6 px-7 shadow-[0_0_10px_rgb(50,50,50)] dark:shadow-[0_0_10px_rgb(250,250,250)]">
-          <h1 className="text-4xl text-center">Education</h1>
-          <div className="flex flex-col gap-5">
-            <h2 className="text-2xl">Bachelor of Technology (B.Tech)</h2>
-            <p className="font-bold">Mechanical Engineering</p>
-            <ul className="flex flex-col gap-2">
-              <li className="flex gap-2">
-                <span>✅</span>
-                <p>Completed the BTech in Mechanical Engineering.</p>
-              </li>
-              <li className="flex gap-2">
-                <span>✅</span>{" "}
-                <p>
-                  Developed the Analytical thinking,problem solving, technical
-                  skills.
-                </p>
-              </li>
-              <li className="flex gap-2">
-                <span>✅</span>{" "}
-                <p>
-                  Transition passion into software development and web
-                  technologies.
-                </p>
-              </li>
-            </ul>
+        {/* Education */}
+        <div
+          className="
+        group
+        bg-white dark:bg-gray-800
+        rounded-2xl
+        border-t-4 border-cyan-500
+        shadow-lg
+        hover:-translate-y-2
+        duration-300
+        p-8"
+        >
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-4xl">🎓</span>
+            <h2 className="text-3xl font-bold">Education</h2>
           </div>
+
+          <h3 className="text-2xl font-semibold text-cyan-500">
+            Bachelor of Technology
+          </h3>
+
+          <p className="font-medium text-gray-500 dark:text-gray-400 mb-5">
+            Mechanical Engineering
+          </p>
+
+          <ul className="space-y-4">
+            <li className="flex gap-3">
+              <span>✅</span>
+              <p>Completed B.Tech in Mechanical Engineering.</p>
+            </li>
+
+            <li className="flex gap-3">
+              <span>🧠</span>
+              <p>
+                Developed analytical thinking, problem-solving and technical
+                skills.
+              </p>
+            </li>
+
+            <li className="flex gap-3">
+              <span>💻</span>
+              <p>
+                Transitioned passion into software development and web
+                technologies.
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
-      <div>
+
+      {/* Skills Section */}
+      <div className="mt-12">
         <Skills />
       </div>
     </section>

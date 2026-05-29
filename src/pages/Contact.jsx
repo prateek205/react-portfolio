@@ -11,81 +11,167 @@ const Contact = () => {
   const { formData, setFormData, handleSubmit } = EnContext();
 
   return (
-    <section className="h-screen w-full flex flex-col gap-10 py-10 px-5 bg-white dark:bg-gray-700 dark:text-black">
-      <div className="flex items-center justify-between h-full">
-        <div className="w-full h-full flex justify-center flex-col gap-10 py-5 px-10 bg-gray-800 text-white dark:bg-white dark:border-2 dark:border-gray-300 dark:text-black rounded-l-xl">
-          <h1 className="text-6xl font-bold text-left">Get In Touch</h1>
-          <p className="text-lg">
-            {" "}
-            Feel free to reach out for collaboration, projects, or job
+    <section className="min-h-screen bg-white dark:bg-gray-900 py-16 px-6 md:px-12 lg:px-20">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Heading */}
+        <div className="text-center mb-12">
+          <h1 className="text-5xl font-bold text-black dark:text-white">
+            Get In <span className="text-red-600">Touch</span>
+          </h1>
+          <p className="text-gray-500 dark:text-gray-400 mt-3">
+            Feel free to reach out for collaborations, projects, or
             opportunities.
           </p>
-          <ul className="flex flex-col gap-10 text-xl">
-            <li className="flex items-center gap-2">
-              <MdOutlineMailOutline />{" "}
-              <span className="text-lg">prateekbahad@gmail.com</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <IoMdPhonePortrait />{" "}
-              <span className="text-lg">+91-9404557931</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <IoLocationSharp />{" "}
-              <span className="text-lg">Chhatrapati Sambhajinagar</span>
-            </li>
-          </ul>
-          <div className="flex gap-5 text-2xl">
-            <Link
-              to="https://www.linkedin.com/in/prateek-bahad-a1b985167/"
-              target="_blank"
-            >
-              <FaLinkedinIn className="text-blue-500" />
-            </Link>
-            <Link to="https://github.com/prateek205" target="_blank">
-              <VscGithubInverted />
-            </Link>
-          </div>
         </div>
-        <div className="bg-gray-100 shadow-[0_0_5px_rgb(50,50,50)] rounded-r-xl dark:bg-gray-700 dark:shadow-[0_0_5px_rgb(250,250,250)] dark:shadow-white w-full h-full flex flex-col items-center justify-center">
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col gap-5 w-96 m-auto"
-          >
-            <h1 className="text-center text-4xl py-5 text-black dark:text-white">
-              Enquiry Now
-            </h1>
-            <input
-              className="text-lg py-1 px-2 outline-none bg-transparent shadow-sm shadow-gray-500 rounded-sm dark:text-white"
-              type="text"
-              placeholder="Name"
-              value={formData.name}
-              onChange={(e) =>
-                setFormData({ ...formData, name: e.target.value })
-              }
-            />
-            <input
-              className="text-lg py-1 px-2 outline-none bg-transparent shadow-sm shadow-gray-500 rounded-sm dark:text-white"
-              type="email"
-              placeholder="Email-Id"
-              value={formData.email}
-              onChange={(e) =>
-                setFormData({ ...formData, email: e.target.value })
-              }
-            />
-            <textarea
-              cols="30"
-              rows="10"
-              placeholder="Type here..."
-              value={formData.message}
-              onChange={(e) =>
-                setFormData({ ...formData, message: e.target.value })
-              }
-              className="shadow-sm dark:shadow-gray-500 bg-transparent shadow-gray-500 outline-none py-1 px-2 dark:text-white"
-            ></textarea>
-            <button className="py-1 px-2 rounded-md bg-white shadow-sm shadow-gray-400 dark:text-black dark:hover:text-white hover:bg-gray-900 hover:translate-y-1 hover:text-white">
-              Submit
-            </button>
-          </form>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 overflow-hidden rounded-3xl shadow-2xl">
+          {/* Left Side */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white p-10 flex flex-col justify-center gap-8">
+            <div>
+              <h2 className="text-4xl font-bold mb-4">
+                Let's Work Together 🚀
+              </h2>
+
+              <p className="text-gray-300 leading-8">
+                I'm always interested in discussing new projects, freelance
+                opportunities, internships, and innovative ideas.
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <div className="flex items-center gap-4">
+                <div className="p-3 rounded-full bg-red-600">
+                  <MdOutlineMailOutline size={22} />
+                </div>
+                <span>prateekbahad@gmail.com</span>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="p-3 rounded-full bg-red-600">
+                  <IoMdPhonePortrait size={22} />
+                </div>
+                <span>+91 9404557931</span>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="p-3 rounded-full bg-red-600">
+                  <IoLocationSharp size={22} />
+                </div>
+                <span>Chhatrapati Sambhajinagar, Maharashtra</span>
+              </div>
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex gap-5 pt-4">
+              <Link
+                to="https://www.linkedin.com/in/prateek-bahad-a1b985167/"
+                target="_blank"
+                className="p-3 rounded-full bg-white/10 hover:bg-blue-600 hover:scale-110 duration-300"
+              >
+                <FaLinkedinIn size={22} />
+              </Link>
+
+              <Link
+                to="https://github.com/prateek205"
+                target="_blank"
+                className="p-3 rounded-full bg-white/10 hover:bg-gray-700 hover:scale-110 duration-300"
+              >
+                <VscGithubInverted size={22} />
+              </Link>
+            </div>
+          </div>
+
+          {/* Right Side Form */}
+          <div className="bg-white dark:bg-gray-800 p-10">
+            <form
+              onSubmit={handleSubmit}
+              className="max-w-md mx-auto flex flex-col gap-6"
+            >
+              <h2 className="text-3xl font-bold text-center text-black dark:text-white">
+                Send Message
+              </h2>
+
+              <input
+                type="text"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={(e) =>
+                  setFormData({ ...formData, name: e.target.value })
+                }
+                className="
+                px-4 py-3
+                rounded-xl
+                border
+                border-gray-300
+                dark:border-gray-600
+                bg-transparent
+                outline-none
+                focus:border-red-500
+                focus:ring-2
+                focus:ring-red-500/30
+                dark:text-white"
+              />
+
+              <input
+                type="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
+                className="
+                px-4 py-3
+                rounded-xl
+                border
+                border-gray-300
+                dark:border-gray-600
+                bg-transparent
+                outline-none
+                focus:border-red-500
+                focus:ring-2
+                focus:ring-red-500/30
+                dark:text-white"
+              />
+
+              <textarea
+                rows="6"
+                placeholder="Write your message..."
+                value={formData.message}
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
+                className="
+                px-4 py-3
+                rounded-xl
+                border
+                border-gray-300
+                dark:border-gray-600
+                bg-transparent
+                outline-none
+                resize-none
+                focus:border-red-500
+                focus:ring-2
+                focus:ring-red-500/30
+                dark:text-white"
+              />
+
+              <button
+                type="submit"
+                className="
+                py-3
+                rounded-xl
+                bg-red-600
+                text-white
+                font-semibold
+                hover:bg-red-700
+                hover:scale-[1.02]
+                duration-300
+                shadow-lg"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>

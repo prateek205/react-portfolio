@@ -12,48 +12,80 @@ const Navbar = () => {
   const { theme, setTheme, handleToggle } = myContext();
 
   return (
-    <div
-      id="navbar"
-      className="flex items-center justify-between relative z-10 px-5 w-full h-20 shadow-lg shadow-gray-500 bg-white text-black dark:bg-gray-900 dark:text-white duration-300"
+    <nav
+      className="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-700
+    bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm"
     >
-      <h1 className="text-4xl">My Portfolio</h1>
-      <div className="flex items-center gap-5">
-        <ul className="flex gap-5 text-lg">
-          <li>
-            <Link to="/" className="hover:text-red-600 flex items-center gap-2">
-              <AiFillHome /> Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about"
-              className="hover:text-red-600 flex items-center gap-2"
-            >
-              <FcAbout /> About
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/experience"
-              className="hover:text-red-600 flex items-center gap-2"
-            >
-              <MdOutlineWorkOutline /> Experience
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              className="hover:text-red-600 flex items-center gap-2"
-            >
-              <RiContactsBook3Fill /> Contact
-            </Link>
-          </li>
-        </ul>
-        <button onClick={handleToggle} className="flex gap-2 text-xl">
-          {theme ? <BsSun /> : <GoMoon />}
-        </button>
+      <div className="max-w-7xl mx-auto h-20 px-6 lg:px-12 flex items-center justify-between">
+        {/* Logo */}
+        <Link to="/">
+          <h1 className="text-3xl md:text-4xl font-bold cursor-pointer">
+            <span className="text-red-600">My</span>
+            <span className="text-gray-800 dark:text-white">Portfolio</span>
+          </h1>
+        </Link>
+
+        {/* Navigation */}
+        <div className="flex items-center gap-8">
+          <ul className="flex items-center gap-6 text-md font-medium">
+            <li>
+              <Link
+                to="/"
+                className="flex items-center gap-2 hover:text-red-600 duration-300"
+              >
+                <AiFillHome className="text-lg" />
+                Home
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/about"
+                className="flex items-center gap-2 hover:text-red-600 duration-300"
+              >
+                <FcAbout className="text-lg" />
+                About
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/experience"
+                className="flex items-center gap-2 hover:text-red-600 duration-300"
+              >
+                <MdOutlineWorkOutline className="text-lg" />
+                Experience
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/contact"
+                className="flex items-center gap-2 hover:text-red-600 duration-300"
+              >
+                <RiContactsBook3Fill className="text-lg" />
+                Contact
+              </Link>
+            </li>
+          </ul>
+
+          {/* Theme Toggle */}
+          <button
+            onClick={handleToggle}
+            className="w-11 h-11 rounded-full flex items-center justify-center
+          bg-gray-100 dark:bg-gray-800
+          hover:scale-110 hover:bg-red-100 dark:hover:bg-red-900
+          duration-300 shadow-md"
+          >
+            {theme ? (
+              <BsSun className="text-yellow-500 text-xl" />
+            ) : (
+              <GoMoon className="text-blue-500 text-xl" />
+            )}
+          </button>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

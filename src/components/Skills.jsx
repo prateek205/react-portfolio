@@ -16,25 +16,51 @@ const Skills = () => {
   ];
 
   return (
-    <section>
-      <div className="shadow-[0_0_10px_rgb(50,50,50)] dark:shadow-[0_0_10px_rgb(250,250,250)] h-80 flex flex-col gap-5 items-center justify-start py-5 rounded-md">
-        <h1 className="text-4xl">Skills</h1>
-        <div className="grid grid-cols-5 h-full w-full py-5 px-10">
-          {skills.map((items, index) => {
-            return (
-              <div key={index}>
-                <ul className="text-xl">
-                  <li className="hover:text-red-900 hover:font-bold dark:hover:text-gray-900 cursor-pointer">
-                    ✅ {items}
-                  </li>
-                </ul>
-              </div>
-            );
-          })}
-        </div>
+  <section className="w-full py-10">
+    <div
+      className="max-w-6xl mx-auto rounded-2xl
+      bg-white dark:bg-gray-800
+      shadow-[0_0_20px_rgba(0,0,0,0.15)]
+      dark:shadow-[0_0_20px_rgba(255,255,255,0.1)]
+      p-8"
+    >
+      {/* Heading */}
+      <div className="text-center mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold">
+          My <span className="text-red-600">Skills</span>
+        </h1>
+        <p className="text-gray-500 dark:text-gray-400 mt-2">
+          Technologies and tools I work with
+        </p>
       </div>
-    </section>
-  );
+
+      {/* Skills Grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+        {skills.map((item, index) => (
+          <div
+            key={index}
+            className="
+              flex items-center justify-center
+              px-4 py-3
+              rounded-xl
+              border border-gray-200 dark:border-gray-700
+              bg-gray-50 dark:bg-gray-900
+              hover:bg-red-600
+              hover:text-white
+              hover:scale-105
+              transition-all duration-300
+              cursor-pointer
+              font-medium
+              shadow-sm
+            "
+          >
+            <span>{item}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
 };
 
 export default Skills;
