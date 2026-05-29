@@ -67,7 +67,7 @@
     {
       "id": 6,
       "category": "Frontend Project",
-      "title": "Blog-App",
+      "title": "Blogging Website",
       "image": "/Projects/blog-app.png",
       "description": "A modern blog application that allows users to explore, read, and manage blog posts through a clean and responsive interface.",
       "stacks": ["React", "Node.js", "Tailwind CSS","React-Router","JSON Server"],
