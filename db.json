@@ -21,8 +21,8 @@
       "image": "/Projects/beauty-products.png",
       "description": "A modern beauty products website featuring skincare, makeup, and cosmetic collections with responsive design and seamless user experience.",
       "stacks": ["React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
-      "github": "https://github.com/prateek205/react-portfolio",
-      "live Demo": "react-portfolio-7i9i.onrender.com"
+      "github": "https://github.com/prateek205/react-beauty-product",
+      "live Demo": "https://beauty-product-j8be.onrender.com"
     },
     {
       "id": 2,
