@@ -30,7 +30,13 @@
       "title": "Indian Tourism",
       "image": "/Projects/indian-tourism.png",
       "description": "A responsive tourism website showcasing popular Indian destinations, cultural heritage, travel guides, and tourist attractions",
-      "stacks": ["React", "Node.js", "Tailwind CSS","React-Router","JSON Server"],
+      "stacks": [
+        "React",
+        "Node.js",
+        "Tailwind CSS",
+        "React-Router",
+        "JSON Server"
+      ],
       "github": "https://github.com/prateek205/Indian_Tourism",
       "live Demo": "https://indian-tourism-ny8l.onrender.com/"
     },
@@ -70,9 +76,30 @@
       "title": "Blogging Website",
       "image": "/Projects/blog-app.png",
       "description": "A modern blog application that allows users to explore, read, and manage blog posts through a clean and responsive interface.",
-      "stacks": ["React", "Node.js", "Tailwind CSS","React-Router","JSON Server"],
+      "stacks": [
+        "React",
+        "Node.js",
+        "Tailwind CSS",
+        "React-Router",
+        "JSON Server"
+      ],
       "github": "https://github.com/prateek205/blog-app",
       "live Demo": "https://blog-app-016s.onrender.com/"
     }
+  ],
+
+  "skills": [
+    { "id": 1, "name": "HTML" },
+    { "id": 2, "name": "CSS" },
+    { "id": 3, "name": "JavaScript" },
+    { "id": 4, "name": "React.js" },
+    { "id": 5, "name": "Node.js" },
+    { "id": 6, "name": "Express.js" },
+    { "id": 7, "name": "MongoDB" },
+    { "id": 8, "name": "Vite" },
+    { "id": 9, "name": "Tailwind CSS" },
+    { "id": 10, "name": "Postman" },
+    { "id": 11, "name": "Netlify" },
+    { "id": 12, "name": "Render" }
   ]
 }

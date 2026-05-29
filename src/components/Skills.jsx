@@ -1,21 +1,7 @@
 import React from "react";
+import { skills } from "../../db.json";
 
 const Skills = () => {
-  const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React.js",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Vite",
-    "Tailwind CSS",
-    "Postman",
-    "Netlify",
-    "Render",
-  ];
-
   return (
     <section className="w-full py-10">
       <div
@@ -39,7 +25,7 @@ const Skills = () => {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
           {skills.map((item, index) => (
             <div
-              key={index}
+              key={item.id}
               className="
               flex items-center justify-center
               px-4 py-3
@@ -55,7 +41,7 @@ const Skills = () => {
               shadow-sm
             "
             >
-              <span>{item}</span>
+              <span>{item.name}</span>
             </div>
           ))}
         </div>
