@@ -1,3 +1,4 @@
+import axios from "axios";
 import { createContext, useContext, useState } from "react";
 
 export const EnqContext = createContext();
@@ -15,24 +16,20 @@ export const EnquiryContext = ({ children }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/enquiry", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const response = await axios.post(
+        "http://localhost:5000/enquiry",
+        formData,
+      );
 
-      const data = await response.json();
-      console.log("Data", data);
+      console.log("Data:", response.data);
 
-      if (response.ok) {
+      if (response.status === 200 || response.status === 201) {
         alert("Form Submitted Successfully !!!");
-        setFormData(initialValue)
-      } else {
-        alert("Form Submit Failed !!");
+        setFormData(initialValue);
       }
     } catch (error) {
-      console.log(error);
-      alert("Server Error");
+      console.error(error);
+      alert("Form Submit Failed !!");
     }
   };
 
