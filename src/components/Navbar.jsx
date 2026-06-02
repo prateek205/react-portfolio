@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { AiFillHome } from "react-icons/ai";
 import { BsInfoCircleFill, BsSun } from "react-icons/bs";
 import { FcAbout } from "react-icons/fc";
-import { GoMoon } from "react-icons/go";
+import { GoMoon, GoProject } from "react-icons/go";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { RiContactsBook3Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -42,6 +42,15 @@ const Navbar = () => {
               >
                 <BsInfoCircleFill className="text-base" />
                 About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/projects"
+                className="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-500 transition-colors py-2"
+              >
+                <GoProject className="text-lg" />
+                Projects
               </Link>
             </li>
             <li>
@@ -132,6 +141,15 @@ const Navbar = () => {
             >
               <BsInfoCircleFill className="text-lg text-gray-400" />
               About
+            </Link>
+
+            <Link
+              to="/projects"
+              onClick={() => setIsOpen(false)}
+              className="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:text-red-600 dark:hover:text-red-400 transition-all"
+            >
+              <MdOutlineWorkOutline className="text-xl text-gray-400" />
+              Projects
             </Link>
 
             <Link

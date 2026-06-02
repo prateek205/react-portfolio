@@ -6,9 +6,13 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { VscGithubInverted } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { EnContext } from "../context/EnquiryContext";
+import { myContext } from "../context/ThemeContext";
+import { BsSun } from "react-icons/bs";
+import { GoMoon } from "react-icons/go";
 
 const Contact = () => {
   const { formData, setFormData, handleSubmit } = EnContext();
+  const { theme, setTheme, handleToggle } = myContext();
 
   return (
     <section className="min-h-screen bg-white dark:bg-gray-900 py-16 px-6 md:px-12 lg:px-20">
@@ -59,6 +63,17 @@ const Contact = () => {
                 </div>
                 <span>Chhatrapati Sambhajinagar, Maharashtra</span>
               </div>
+              <button
+                onClick={handleToggle}
+                className="w-10 h-10 rounded-xl flex items-center justify-center bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:text-red-600 dark:hover:text-red-400 transition-all cursor-pointer active:scale-95"
+                aria-label="Toggle layout theme"
+              >
+                {theme ? (
+                  <BsSun className="text-yellow-500 text-lg" />
+                ) : (
+                  <GoMoon className="text-indigo-500 text-lg" />
+                )}
+              </button>
             </div>
 
             {/* Social Icons */}
