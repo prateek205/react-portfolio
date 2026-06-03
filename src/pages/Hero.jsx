@@ -79,7 +79,7 @@ const Hero = () => {
             </Link>
 
             <Link
-              to="https://github.com"
+              to="https://github.com/prateek205"
               target="_blank"
               className="
             p-3 rounded-full
