@@ -85,6 +85,22 @@
       ],
       "github": "https://github.com/prateek205/blog-app",
       "live Demo": "https://blog-app-016s.onrender.com/"
+    },
+    {
+      "id": 7,
+      "category": "Frontend Project",
+      "title": "Admin Panel",
+      "image": "/Projects/admin-panel.png",
+      "description": "A responsive Admin Dashboard built with React and Tailwind CSS that enables efficient management of products, users, and application data. The platform includes authentication, CRUD operations, dynamic routing, state management, and a modern user interface designed to streamline administrative tasks and improve productivity.",
+      "stacks": [
+        "React",
+        "Node.js",
+        "Tailwind CSS",
+        "React-Router",
+        "JSON Server"
+      ],
+      "github": "https://github.com/prateek205/react-api",
+      "live Demo": "https://admin-panel-uw5q.onrender.com/"
     }
   ],
 
