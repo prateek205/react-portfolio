@@ -67,7 +67,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex gap-5 justify-center lg:justify-start pt-3">
             <Link
-              to="https://www.linkedin.com"
+              to="www.linkedin.com/in/prateek-bahad-a1b985167"
               target="_blank"
               className="
             p-3 rounded-full
